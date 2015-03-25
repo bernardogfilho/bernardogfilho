@@ -13,19 +13,20 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #424549;
+$text-color      : #424549;
 $background-color: #E0E1E2;
-$brand-color:      #59ADAF;
+$brand-color     : #59ADAF;
+$secondary-color : #E2695C;
 
 $grey-color:       #424549;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 $max-width: 800px;
+$aside-width: 250px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "normalize",
         "bourbon/bourbon",
         "neat/neat",
         "styles"
