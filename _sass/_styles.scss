@@ -45,10 +45,12 @@ a {
   padding: 2em 0;
   min-width: $aside-width;
   min-height: $base-line-height*10em;
-  color: $background-color;
+  color: #fff;
   background: $grey-color;
+  background: url('../img/building.jpg');
+  background-size: cover;
   a {
-    color: $background-color;
+    color: #fff;
     font-weight: 100;
   }
   @include media(768px) {
@@ -65,8 +67,10 @@ a {
     width: 160px;
     margin: auto;
     border-radius: 50%;
-    border: 2px solid $background-color;
-    background-image: url('../img/avatar.png');
+    border: 1px solid $background-color;
+    /* background-image: url('../img/avatar.png'); */
+    background-image: url('https://scontent-cdg.xx.fbcdn.net/hphotos-xfp1/v/t1.0-9/10930864_912165268807180_1387991604114066219_n.jpg?oh=6298e04d52cbfa95f699ac2d8c1c6108&oe=55B93D6B');
+    background-size: 100%;
   }
 
   .site-header--info {
@@ -76,6 +80,7 @@ a {
 .horizontal-list {
   margin: 0;
   padding: 0;
+  margin-bottom: 1em;
   li {
     display: inline;
     margin: 0 0.5em;
@@ -101,4 +106,22 @@ a {
 .post-meta {
   color: $grey-color-light;
   margin-bottom: 1em;
+}
+
+.btn {
+  border: 1px solid $background-color;
+  padding: 0.25em 1em;
+  border-radius: 1em;
+  /* &:hover {
+    background: $background-color;
+    color: $text-color;
+  } */
+}
+
+.small {
+  font-size: 0.85em;
+}
+
+.btn-small {
+  font-size: 0.85em;
 }
